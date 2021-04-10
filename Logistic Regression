@@ -1,8 +1,6 @@
 import numpy as np
 import pandas as pd
 
-np.random.seed(7)
-
 ##softmax
 def softmax(u):
   expu=np.exp(u)

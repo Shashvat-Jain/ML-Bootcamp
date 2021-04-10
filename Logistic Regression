@@ -1,6 +1,5 @@
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
 
 np.random.seed(7)
 
@@ -101,8 +100,6 @@ Y_train = pd.get_dummies(Y_train).values
 
 alpha = 0.01
 beta, Lvals= logReg_SGD(X_train, Y_train, alpha)
-
-plt.semilogy(Lvals)
 
 N_test = X_test.shape[0]
 X_test = np.reshape(X_test,(N_test,28*28))
